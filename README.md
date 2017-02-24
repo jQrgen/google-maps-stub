@@ -1,4 +1,9 @@
 # google-maps-stub
+Used for stubbing google maps javascript api v3.23
+
+#### Installation
+
+`npm install google-maps-stub`
 
 #### DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 Version 2, December 2004
