@@ -1,6 +1,8 @@
 'use strict';
 
-module.exports = function() {
+var google_maps_stub = {};
+
+google_maps_stub.get = function () {
   var window = {
     google: {
       maps: {
@@ -58,105 +60,105 @@ module.exports = function() {
         MVCObject: function () { },
         //https://developers.google.com/maps/documentation/javascript/reference#Map
         Map: function () {
-            return {
-                //methods
-                fitBounds: function () { },
-                getBounds: function () { },
-                getCenter: function () { },
-                getDiv: function () { },
-                getHeading: function () { },
-                getMapTypeId: function () { },
-                getProjection: function () { },
-                getStreetView: function () { },
-                getTilt: function () { },
-                getZoom: function () { },
-                panBy: function () { },
-                panTo: function () { },
-                panToBounds: function () { },
-                setCenter: function () { },
-                setHeading: function() { },
-                setMapTypeId: function() { },
-                setOptions: function() { },
-                setStreetView: function () { },
-                setTilt: function () { },
-                setZoom: function() { },
-                //properties
-                controls: {},
-                data: {
-                    //https://developers.google.com/maps/documentation/javascript/reference#Data
-                    //methods
-                    add: function () { },
-                    addGeoJson: function () { },
-                    contains: function () { },
-                    forEach: function () { },
-                    getControlPosition: function () { },
-                    getControls: function () { },
-                    getDrawingMode: function () { },
-                    getFeatureById: function () { },
-                    getMap: function () { },
-                    getStyle: function () { },
-                    loadGeoJson: function () { },
-                    overrideStyle: function () { },
-                    remove: function () { },
-                    revertStyle: function () { },
-                    setControlPosition: function () { },
-                    setControls: function () { },
-                    setDrawingMode: function () { },
-                    setMap: function () { },
-                    setStyle: function () { },
-                    toGeoJson: function () { },
-                    //properties
-                    controlPosition: {},
-                    controls: [],
+          return {
+            //methods
+            fitBounds: function () { },
+            getBounds: function () { },
+            getCenter: function () { },
+            getDiv: function () { },
+            getHeading: function () { },
+            getMapTypeId: function () { },
+            getProjection: function () { },
+            getStreetView: function () { },
+            getTilt: function () { },
+            getZoom: function () { },
+            panBy: function () { },
+            panTo: function () { },
+            panToBounds: function () { },
+            setCenter: function () { },
+            setHeading: function() { },
+            setMapTypeId: function() { },
+            setOptions: function() { },
+            setStreetView: function () { },
+            setTilt: function () { },
+            setZoom: function() { },
+            //properties
+            controls: {},
+            data: {
+              //https://developers.google.com/maps/documentation/javascript/reference#Data
+              //methods
+              add: function () { },
+              addGeoJson: function () { },
+              contains: function () { },
+              forEach: function () { },
+              getControlPosition: function () { },
+              getControls: function () { },
+              getDrawingMode: function () { },
+              getFeatureById: function () { },
+              getMap: function () { },
+              getStyle: function () { },
+              loadGeoJson: function () { },
+              overrideStyle: function () { },
+              remove: function () { },
+              revertStyle: function () { },
+              setControlPosition: function () { },
+              setControls: function () { },
+              setDrawingMode: function () { },
+              setMap: function () { },
+              setStyle: function () { },
+              toGeoJson: function () { },
+              //properties
+              controlPosition: {},
+              controls: [],
 
-                },
-                mapTypes: {
-                    //https://developers.google.com/maps/documentation/javascript/reference#MapTypeRegistry
-                    //methods
-                    set: function () { }
-                },
-                overlayMapTypes: {
-                    //https://developers.google.com/maps/documentation/javascript/reference#MVCArray
-                    clear: function () { },
-                    getArray: function () { },
-                    getAt: function () { },
-                    getLength: function () { },
-                    insertAt: function () { },
-                    pop: function () { },
-                    push: function () { },
-                    removeAt: function () { },
-                    setAt: function () { }
-                }
-            };
+            },
+            mapTypes: {
+              //https://developers.google.com/maps/documentation/javascript/reference#MapTypeRegistry
+              //methods
+              set: function () { }
+            },
+            overlayMapTypes: {
+              //https://developers.google.com/maps/documentation/javascript/reference#MVCArray
+              clear: function () { },
+              getArray: function () { },
+              getAt: function () { },
+              getLength: function () { },
+              insertAt: function () { },
+              pop: function () { },
+              push: function () { },
+              removeAt: function () { },
+              setAt: function () { }
+            }
+          };
         },
         MapTypeControlStyle: {},
         //https://developers.google.com/maps/documentation/javascript/reference#MapTypeId
         MapTypeId: {
-            HYBRID: '',
-            ROADMAP: '',
-            SATELLITE: '',
-            TERRAIN: ''
+          HYBRID: '',
+          ROADMAP: '',
+          SATELLITE: '',
+          TERRAIN: ''
         },
         //https://developers.google.com/maps/documentation/javascript/reference#MapTypeRegistry
         MapTypeRegistry: function () { },
         //https://developers.google.com/maps/documentation/javascript/reference#Marker
         Marker: function () {
-            return {
-                setTitle: function (visible) { },
-                setVisible: function () { },
-                setZIndex: function () { }
-            };
+          return {
+            setTitle: function (visible) { },
+            setVisible: function () { },
+            setZIndex: function () { }
+          };
         },
         MarkerImage: function () { },
         //https://developers.google.com/maps/documentation/javascript/reference#MarkerOptions
         MarkerOptions: {
-            visible: false
+          visible: false
         },
         //https://developers.google.com/maps/documentation/javascript/reference#MaxZoomService
         MaxZoomService: function () {
-            return {
-                getMaxZoomAtLatLng: function () { }
-            };
+          return {
+            getMaxZoomAtLatLng: function () { }
+          };
         },
         //https://developers.google.com/maps/documentation/javascript/reference#MaxZoomStatus
         MaxZoomStatus: {},
@@ -206,14 +208,14 @@ module.exports = function() {
         ZoomControlStyle: {},
         __gjsload__: function () { },
         event: {
-            addListener: function () { }
+          addListener: function () { }
         },
         places: {
-            AutocompleteService: function () {
-                return {
-                    getPlacePredictions: function () { }
-                };
-            }
+          AutocompleteService: function () {
+            return {
+              getPlacePredictions: function () { }
+            };
+          }
         }
       }
     }
