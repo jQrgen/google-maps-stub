@@ -1,0 +1,26 @@
+{
+  "name": "google-maps-stub",
+  "version": "1.0.0",
+  "description": "Stub for Google Maps v3.23, used for creating stubs for testing",
+  "main": "google-maps-stub.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jQrgen/google-maps-stub.git"
+  },
+  "keywords": [
+    "google",
+    "maps",
+    "stub",
+    "javascript",
+    "testing"
+  ],
+  "author": "Jørgen Svennevik Notland <jorgen.notland@gmail.com> (https://github.com/jQrgen)",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/jQrgen/google-maps-stub/issues"
+  },
+  "homepage": "https://github.com/jQrgen/google-maps-stub#readme"
+}
